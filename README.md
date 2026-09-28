@@ -1,6 +1,6 @@
-# ষোলো গুটি · Bead 16
+# Bead 16
 
-## [▶ ওয়েবসাইটে খেলো / Play the game](https://mdmortuzahossain.github.io/bead-16/)
+## [▶ Play the game](https://mdmortuzahossain.github.io/bead-16/)
 
 A browser version of Sixteen Soldiers (Sholo Guti), with a Bengali interface, a computer opponent, and two players on the same device.
 
