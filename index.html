@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="bn">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Play Sholo Guti / Sixteen Soldiers in your browser. Challenge the computer or a friend on the traditional 37-point board."><title>ষোলো গুটি — Bead 16</title><link rel="stylesheet" href="style.css"><script src="engine.js" defer></script><script src="game.js" defer></script></head>
+<body><main>
+  <header><a href="./" class="brand"><span class="brand-icon">⠿</span> গুটির আসর<span class="edition">LITTLE ARCADE · 003</span></a><a class="source" href="https://github.com/MdMortuzaHossain/bead-16" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></header>
+  <section class="intro"><div><p class="eyebrow">চেনা খেলা, নতুন আসর</p><h1>ষোলো <em>গুটি</em><span>Sixteen Soldiers</span></h1></div><p class="intro-note">একটু বুদ্ধি। একটু ধৈর্য।<br>এক চালেই বদলে যেতে পারে খেলা।</p></section>
+  <div class="layout">
+    <section class="board-card" aria-label="খেলার বোর্ড"><div class="board-top"><span><i class="dot terracotta"></i> <b id="top-name">কম্পিউটার</b></span><span>৩৭ ঘর · ৩২ গুটি</span></div><div id="board" class="board"><svg id="lines" viewBox="0 0 360 584" aria-hidden="true"></svg><div id="pieces"></div></div><div class="board-bottom"><span><i class="dot jade"></i> <b id="bottom-name">তুমি</b></span><span>BEAD 16 / SHOLO GUTI</span></div></section>
+    <aside>
+      <section class="controls"><p class="eyebrow">আজ কার সঙ্গে?</p><div class="mode-tabs" role="group" aria-label="খেলার মোড"><button id="computer" aria-pressed="true">কম্পিউটার</button><button id="friend" aria-pressed="false">বন্ধু · একই ডিভাইস</button></div><p class="mode-note" id="mode-note">তুমি সবুজ গুটি নিয়ে আগে খেলবে।</p>
+        <div class="turn-card"><span class="turn-kicker" id="turn-kicker">তোমার চাল</span><h2 id="status" role="status">একটি সবুজ গুটি বেছে নাও</h2><p id="hint">তারপর চিহ্নিত খালি ঘরে ক্লিক করো।</p></div>
+        <div class="scores"><div><span><i class="dot jade"></i> সবুজ</span><strong id="green-count">১৬</strong><small id="green-captured">কেটেছে ০টি</small></div><div><span><i class="dot terracotta"></i> লাল</span><strong id="red-count">১৬</strong><small id="red-captured">কেটেছে ০টি</small></div></div>
+        <button id="end-turn" class="primary" hidden>এই চাল শেষ করো →</button><div class="actions"><button id="undo">↶ চাল ফেরাও</button><button id="new-game">নতুন খেলা ↗</button></div><p id="turn-number" class="turn-number">চাল ১ · সবুজ আগে খেলবে</p>
+      </section>
+      <section class="guide"><p class="eyebrow">খেলার সহজ নিয়ম</p><ol><li><b>বেছে নাও</b><span>নিজের গুটি ও পাশের চিহ্নিত খালি ঘরে ক্লিক করো। গুটি শুধু আঁকা রেখা ধরে চলে।</span></li><li><b>লাফিয়ে কাটো</b><span>পাশের প্রতিপক্ষের গুটি টপকে একই সরল রেখার পরের খালি ঘরে যাও।</span></li><li><b>জিতে নাও</b><span>প্রতিপক্ষের সব গুটি কাটো, অথবা তার সব চাল আটকে দাও।</span></li></ol><details><summary>বাড়তি নিয়ম ও সাহায্য</summary><p>সব দিকে চাল ও কাটা যায়। এই সংস্করণে কাটা বাধ্যতামূলক নয়। একবার কাটার পর একই গুটি দিয়ে আবার কাটতে পারো, অথবা “এই চাল শেষ করো” চাপতে পারো।</p><p>একই অবস্থায় একই পক্ষের চাল তিনবার এলে, অথবা টানা ৮০ চাল কোনো গুটি কাটা না হলে ড্র। এগুলো এই সংস্করণের ড্র ও অবরোধের নিয়ম।</p><p>চাল ফেরাও চাপলে কম্পিউটার মোডে তোমার আগের চালের শুরুতে ফিরবে। মোড বদলালে নতুন খেলা শুরু হবে। গুটি ও ঘর Tab দিয়ে বেছে Enter বা Space দিয়েও খেলা যায়।</p><a href="https://en.wikipedia.org/wiki/Sixteen_soldiers" target="_blank" rel="noopener noreferrer">ঐতিহ্যবাহী নিয়মের সূত্র ↗</a></details></section>
+    </aside>
+  </div><footer><span>মাটির উঠোনের খেলা, এবার তোমার পর্দায়।</span><span>MADE FOR ONE MORE ROUND</span></footer>
+  <dialog id="confirm"><h2>নতুন খেলা শুরু করবে?</h2><p>এখনকার খেলা শেষ করে নতুন করে গুটি সাজানো হবে।</p><div><button id="cancel-new">ফিরে যাও</button><button id="confirm-new" class="primary">শুরু করো</button></div></dialog>
+</main></body></html>
